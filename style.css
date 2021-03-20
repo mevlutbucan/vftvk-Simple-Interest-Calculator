@@ -3,9 +3,6 @@
 }
 body {
   display: flex;
-  height: 100vh;
-  margin: 0;
-  align-items: center;
   justify-content: center;
   background-color: black;
   color: white;
@@ -48,7 +45,7 @@ input[type="range"] {
 }
 
 #result {
-  width: 300px;
+  width: 320px;
   margin: auto;
   white-space: pre-line;
 }
