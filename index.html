@@ -1,16 +1,44 @@
+<!DOCTYPE html>
 <html>
-    <head>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple Interest Calculator</title>
+  </head>
+  <body>
+    <div class="maindiv">
+      <h1>Simple Interest Calculator</h1>
+      <div class="form-section">
+        <label for="amount">Amount</label>
+        <input id="amount" type="number" />
+      </div>
+      <div class="form-section">
+        <label for="rate">Interest Rate</label>
+        <input id="rate" type="range" min="1" max="20" step="0.25" value="10.25" />
+        <span class="rate-value">10.25%</span>
+      </div>
+      <div class="form-section">
+        <label for="years">No. of Years</label>
+        <select id="years">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="form-section">
+        <button>Compute Interest</button>
+      </div>
+      <div id="result"></div>
+      <footer>
+        <p class="copyright"><span class="copyright-symbol">&copy;</span> Everyone Can Get Rich</p>
+      </footer>
+    </div>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
-
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
-
-        <button onclick="compute()">Compute</button>
-    </body>
+  </body>
 </html>

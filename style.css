@@ -1,4 +1,66 @@
-body {background-color:tan;}
-h1{color:green;}
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin: 20px;
+  color: grey;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+input[type="range"] {
+  width: 140px;
+  margin: 0;
+}
 
+.maindiv {
+  border-radius: 25px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+}
 
+.form-section {
+  width: 320px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.rate-value {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+}
+
+#result {
+  width: 300px;
+  margin: auto;
+  white-space: pre-line;
+}
+#result > span {
+  background-color: yellow;
+}
+
+.copyright {
+  margin: 10px 20px;
+  font-size: 16px;
+}
+.copyright-symbol {
+  display: inline-block;
+  font-size: 24px;
+}
